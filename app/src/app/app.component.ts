@@ -11,9 +11,10 @@ export class AppComponent {
   getColorForPercentage(percentage: number) {
     percentage = percentage / 100;
     const baseColors = [
-      { percentage: 0, color: { r: 0xff, g: 0x00, b: 0 } },
-      { percentage: 0.5, color: { r: 0xff, g: 0xff, b: 0 } },
-      { percentage: 1.0, color: { r: 0x00, g: 0xff, b: 0 } }];
+      { percentage: 0, color: { r: 255, g: 0, b: 0 } },
+      { percentage: 0.5, color: { r: 255, g: 255, b: 0 } },
+      { percentage: 1.0, color: { r: 0, g: 255, b: 0 } }
+    ];
 
     let i = 1;
     for (i = 1; i < baseColors.length - 1; i++) {
