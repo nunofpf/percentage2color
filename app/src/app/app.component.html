@@ -1,0 +1,10 @@
+<div id="colored" [style.background-color]="getColorForPercentage(percentage)">
+  <div>
+    <p id="percentage">
+      {{percentage}}%
+    </p>
+    <input type="range" min="0" max="100" [(ngModel)]="percentage" />
+  </div>
+</div>
+
+<router-outlet></router-outlet>
